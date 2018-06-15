@@ -1,0 +1,57 @@
+html, body { 
+	background:black;
+	width: 100%; height: 100%; 
+    background-image:url("/img/back.jpg"); 
+       background-repeat: no-repeat;
+	 background-size: cover;
+    padding: 0px; margin: 0px; 
+}
+#fullScreen {
+	position: absolute; 
+    height: 100%;
+    width: 100%;
+
+}
+
+#canvas2d{
+	width: 100%;
+}
+
+
+.bg-black{
+	background:black;
+	color: white;
+}
+
+#main-header{
+
+}
+
+#main-header img{
+
+	width: 90%;
+	height: 90%;
+}
+
+#main-header .port-item{
+	width: 30%;
+}
+
+#main-header .port-item .fa{
+	font-size: 2em;
+}
+
+#main-header .port-item:hover{
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+#contact .fa{
+	padding: 1em;
+}
+
+@media(min-width: 1199px){
+	.port-item{
+		padding: 3em !important;
+	}
+}

@@ -1,14 +1,579 @@
 {% load static %}
 
-<link rel="stylesheet" type="text/css" href="{% static 'portfolio/style.css' %}" />
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
-<body>
-	Hello!
-</body>
-</html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+		<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+		<!-- Main css -->
+		
+		<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Bevan|Permanent+Marker" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="{% static 'portfolio/css/style.css' %}" />
+		<title>My portfolio</title>
+	</head>
+	<body>
+		<div class="fullScreen" id="fullScreen">
+			<canvas id="canvas2d">    </canvas>
+		</div>
+		<div id="size">
+			<div><i class="fa fa-twiter"></i></div>
+			<div class="container">
+				<header id="main-header">
+					<div class="row no-gutters">
+						<div class="col-lg-4 col-md-5">
+							<!-- <img src="img/pic2.jpg" alt="" class="rounded-circle"> -->
+						</div>
+						<div class="col-lg-8 col-md-7">
+							<div class="d-flex flex-column">
+								<div class="p-5 bg-dark text-white">
+									<div class="d-flex flex-row justify-content-around align-items-center">
+										<h1 class="display-4" style="font-family: 'Bevan', cursive; font-size: 3em">DeveloPr</h1>
+										<img src="{% static 'portfolio/images/logo.png' %}" alt="" style="height: 100px; width: 100px">
+										<div style="font-size:3em"><i class="fa fa-github"></i></div>
+									</div>
+								</div>
+								<div class="p-4 bg-black">
+									<div class="row" style="font-family: 'Permanent Marker', cursive;">
+										<div class="col-lg-4">Name: Richard </div>
+										<div class="col-lg-4">Birth Date: 03/09/1983 </div>
+										<div class="col-lg-4">Country: Brazil</div>
+									</div>
+								</div>
+								<div>
+									<div class="d-flex flex-row text-white align-items stretch text-center">
+										<div class="port-item p-4 bg-primary" data-toggle="collapse" data-target="#home">
+											<i class="fa fa-cogs d-block"></i> Skills
+										</div>
+										<div class="port-item p-4 bg-success" data-toggle="collapse" data-target="#work">
+											<i class="fa fa-folder-open d-block"></i> Work
+										</div>
+										<div class="port-item p-4 bg-warning" data-toggle="collapse" data-target="#resume">
+											<i class="fa fa-graduation-cap d-block"></i> Resume
+										</div>
+										<div class="port-item p-4 bg-danger" data-toggle="collapse" data-target="#contact">
+											<i class="fa fa-envelope d-block"></i> Contact
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</header>
+				<!-- Skills -->
+				<div id="home" class="collapse show">
+					<div class="card card-body bg-primary text-white py-5" style="font-family: 'Parisienne', cursive;">
+						<div>
+							<div class="d-inline-block mr-5"> <h2 style="font-size: 70px">Welcome</h2></div>
+							<p class="lead d-inline-block" style="font-size: 30px">Here are some of my skills</p>
+						</div>
+						
+						
+					</div>
+					<div class="card card-body py-5 bg-warning">
+						<div class="container text-center">
+							<h3 style="font-size: 40px; color: black">Programming Skills</h3>
+						</div>
+						
+						<hr>
+						<h4>HTML5</h4>
+						<div class="progress mb-3 bg-warning">
+							<div class="progress-bar bg-success" style="width: 100%">
+								
+							</div>
+						</div>
+						<h4>CSS3</h4>
+						<div class="progress mb-3 bg-warning">
+							<div class="progress-bar bg-success" style="width: 95%">
+								
+							</div>
+						</div>
+						<h4>JavaScript</h4>
+						<div class="progress mb-3 bg-warning">
+							<div class="progress-bar bg-success" style="width: 90%">
+								
+							</div>
+						</div>
+						<h4>NodeJs</h4>
+						<div class="progress mb-3 bg-warning">
+							<div class="progress-bar bg-success" style="width: 80%">
+								
+							</div>
+						</div>
+						<h4>PHP</h4>
+						<div class="progress mb-3 bg-warning">
+							<div class="progress-bar bg-success" style="width: 80%">
+								
+							</div>
+						</div>
+						<h4>SQL (MySQL, PostgreSQL)</h4>
+						<div class="progress mb-3 bg-warning">
+							<div class="progress-bar bg-success" style="width: 80%">
+								
+							</div>
+						</div>
+						<h4>Python</h4>
+						<div class="progress mb-3 bg-warning">
+							<div class="progress-bar bg-success" style="width: 80%">
+								
+							</div>
+						</div>
+						<h4>C</h4>
+						<div class="progress mb-3 bg-warning">
+							<div class="progress-bar bg-success" style="width: 50%">
+								
+							</div>
+						</div>
+						<h4>GIS</h4>
+						<div class="progress mb-3 bg-warning">
+							<div class="progress-bar bg-success" style="width: 80%">
+								
+							</div>
+						</div>
+						<div class="d-flex d-row justify-content-around">
+							<div class="row">
+								
+								
+								<div><i class="fa fa-tag col-sm-1" aria-hidden="true"></i>JQuery</div>
+								<div><i class="fa fa-tag col-sm-1" aria-hidden="true"></i>AJAX</div>
+								<div><i class="fa fa-tag col-sm-1" aria-hidden="true"></i>BOOTSTRAP</div>
+								<div><i class="fa fa-tag col-sm-1" aria-hidden="true"></i>DJANGO</div>
+								<div><i class="fa fa-tag col-sm-1" aria-hidden="true"></i>SVG</div>
+								<div><i class="fa fa-tag col-sm-1" aria-hidden="true"></i>Wordpress</div>
+								<div><i class="fa fa-tag col-sm-1" aria-hidden="true"></i>LINUX</div>
+							</div>
+						</div>
+					</div>
+					<div class="card card-body py-5 bg-warning">
+						<div class="container text-center">
+							<h3 style="font-size: 40px; color: black">Languages</h3>
+						</div>
+						<hr>
+						<h4>English</h4>
+						<div class="progress mb-3 bg-warning">
+							<div class="progress-bar bg-info" style="width: 80%"></div>
+						</div>
+						<h4>Deutsch</h4>
+						<div class="progress mb-3 bg-warning">
+							<div class="progress-bar bg-info" style="width: 50%"></div>
+						</div>
+						<h4>Chinese</h4>
+						<div class="progress mb-3 bg-warning">
+							<div class="progress-bar bg-info" style="width: 30%"></div>
+						</div>
+					</div>
+				</div>
+				<!-- WORK -->
+				<div id="work" class="collapse">
+					<div class="card card-body bg-success text-white py-5" style="font-family: 'Parisienne', cursive;">
+						<h3 style="font-size: 50px; color: black">What have I built?</h3>
+					</div>
+					<div class="card card-body py-5 bg-dark">
+						<div class="row no-gutters justify-content-around">
+
+							<div class="col-12 text-center text-white mb-5">
+								<div style="font-size: 40px">Seismic Data Modeling</div>
+								
+		
+								<a href="https://unsplash.it/600.jpg?image=250" data-toggle="lightbox">
+									<img src="{% static 'portfolio/images/seismic.png' %}" alt="" class="img-fluid">
+								</a>
+						<div class="mt-3"><p>A software to model seismic reflection data from fractured medium.</p></div>
+							</div>
+
+
+							<div class="col-12 text-center text-white">
+								<div style="font-size: 40px">Cryptocurrency Indicators</div>
+								<a href="https://poloniexmacdhunter.herokuapp.com">
+									<img src="{% static 'portfolio/images/macd.png' %}" alt="" class="img-fluid">
+								</a>
+								<div class="mt-3"><p>An app to look for all BTC pairs on Poloniex exchange and displays the status of the MACD indicator for all at once.</p></div>
+								
+							</div>
+			<!-- 				<div class="col-md-3">
+								<a href="https://unsplash.it/600.jpg?image=251" data-toggle="lightbox">
+									<img src="https://unsplash.it/600.jpg?image=251" alt="" class="img-fluid">
+								</a>
+							</div> -->
+							
+						</div>
+					</div>
+				</div>
+				<!-- RESUME -->
+				<div id="resume" class="collapse">
+					<div class="card card-body bg-warning text-white py-5 h-100 justify-content-center" style="font-family: 'Parisienne', cursive;">
+						<h2 style="font-size: 50px; color: black">What did I study formally?</h2>
+					</div>
+					<div class="d-flex flex-row text-center justify-content-center">
+				
+						
+						<div class="card bg-dark text-white m-3 col-md-4" style="opacity: 0.8">
+							<div class="card-body">
+								<h4 class="card-title border-bottom"><em>Geofisica</em></h4>
+								<p>Universidade de São Paulo</p>
+							</div>
+							<div class="card-footer">
+								<h6 class="text-muted">Date:2013-2017</h6>
+							</div>
+						</div>
+	<!-- 					<div class="card card bg-dark text-white m-3 col-md-4">
+							<div class="card-body">
+								<h4 class="card-title border-bottom"><em>Filosofia</em></h4>
+								<p>Universidade de São Paulo</p>
+							</div>
+							<div class="card-footer">
+								<h6 class="text-muted">Date:2008-2012</h6>
+							</div>
+						</div> -->
+						<div class="card bg-dark text-white m-3 col-md-4" style="opacity: 0.8">
+							<div class="card-body">
+								<h4 class="card-title border-bottom" ><em>Ciências da Atividade Física</em></h4>
+								<p>Universidade de São Paulo</p>
+							</div>
+							<div class="card-footer">
+								<h6 class="text-muted">Date:2006-2008</h6>
+							</div>
+						</div>
+			<!-- 			<div class="card bg-dark text-white m-3 col-md-4">
+							<div class="card-body">
+								<h4 class="card-title border-bottom"><em>Eletroeletrônica</em></h4>
+								<p>SENAI</p>
+							</div>
+							<div class="card-footer">
+								<h6 class="text-muted">Date</h6>
+							</div>
+						</div> -->
+						</div>
+				
+				</div>
+				<!-- CONTACT -->
+				<div id="contact" class="collapse">
+					<div class="card card-body bg-danger text-white py-5">
+						<h2>Contact</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi provident debitis alias magnam distinctio in vero, neque voluptatum at voluptas placeat reiciendis quia deserunt quas beatae minus pariatur, porro ipsam.</p>
+					</div>
+					<div class="card card-body py-5">
+						<h3>Get in touch</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis eveniet repudiandae aperiam laboriosam dolore magnam quae ab cumque. Aspernatur, non.</p>
+						<form>
+							<div class="form-group">
+								<div class="input-group input-group-lg">
+									<span class="input-group-addon bg-danger text-white">
+										<i class="fa fa-user"></i>
+									</span>
+									<input type="text" class="form-control bg-dark text-white" placeholder="Name">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="input-group input-group-lg">
+									<span class="input-group-addon bg-danger text-white">
+										<i class="fa fa-envelope"></i>
+									</span>
+									<input type="text" class="form-control bg-dark text-white" placeholder="Email">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="input-group input-group-lg">
+									<span class="input-group-addon bg-danger text-white">
+										<i class="fa fa-pencil"></i>
+									</span>
+									<textarea rows="5" class="form-control bg-dark text-white" placeholder="Message"></textarea>
+								</div>
+							</div>
+							<input type="submit" value="submit" class="btn btn-danger btn-block btn-lg">
+						</form>
+					</div>
+				</div>
+				<!-- FOOTER -->
+				<footer id="main-footer" class="p-5 text-white">
+					<div class="row">
+						<div class="col-md-6">
+							<a href="#" class="btn btn-dark"><i class="fa fa-cloud">Download</i></a>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+		<!-- Bootstrap CDN-->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+		<script>
+		// $(window).resize(function() {
+		// 	$('#canvas2d').height($('#size').height());
+		// });
+			// $('.port-item').click(function(){
+				// 	$('.collapse').collapse('hide');
+				// 	// console.log($('#size').height());
+				
+			// });
+			// 	$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+		//                event.preventDefault();
+		//                $(this).ekkoLightbox();
+		//            });
+		// $('.collapse').on('hidden.bs.collapse', function () {
+		//  	console.log($('#size').height());
+		//  	$('#canvas2d').height($('#size').height());
+		// });
+		// $('.collapse').on("shown.bs.collapse", function(){
+		// console.log($('#size').height());
+		// $('#canvas2d').height($('#size').height());
+		// });
+		</script>
+		<script>
+			$('#canvas2d').height($(document).height());
+		/**
+		* The stars in our starfield!
+		* Stars coordinate system is relative to the CENTER of the canvas
+		* @param  {number} x
+		* @param  {number} y
+		*/
+		// var Star = function(x, y, maxSpeed) {
+		//     this.x = x;
+		//     this.y = y;
+		//     this.slope = y / x; // This only works because our origin is always (0,0)
+		//     this.opacity = 0;
+		//     this.speed = Math.max(Math.random() * maxSpeed, 1);
+		// };
+		// /**
+		//  * Compute the distance of this star relative to any other point in space.
+		//  *
+		//  * @param  {int} originX
+		//  * @param  {int} originY
+		//  *
+		//  * @return {float} The distance of this star to the given origin
+		//  */
+		// Star.prototype.distanceTo = function(originX, originY) {
+		//     return Math.sqrt(Math.pow(originX - this.x, 2) + Math.pow(originY - this.y, 2));
+		// };
+		// /**
+		//  * Reinitializes this star's attributes, without re-creating it
+		//  *
+		//  * @param  {number} x
+		//  * @param  {number} y
+		//  *
+		//  * @return {Star} this star
+		//  */
+		// Star.prototype.resetPosition = function(x, y, maxSpeed) {
+		//     Star.apply(this, arguments);
+		//     return this;
+		// };
+		// /**
+		//  * The BigBang factory creates stars (Should be called StarFactory, but that is
+		//  * a WAY LESS COOL NAME!
+		//  * @type {Object}
+		//  */
+		// var BigBang = {
+		//     /**
+		//      * Returns a random star within a region of the space.
+		//      *
+		//      * @param  {number} minX minimum X coordinate of the region
+		//      * @param  {number} minY minimum Y coordinate of the region
+		//      * @param  {number} maxX maximum X coordinate of the region
+		//      * @param  {number} maxY maximum Y coordinate of the region
+		//      *
+		//      * @return {Star} The random star
+		//      */
+		//     getRandomStar: function(minX, minY, maxX, maxY, maxSpeed) {
+		//         var coords = BigBang.getRandomPosition(minX, minY, maxX, maxY);
+		//         return new Star(coords.x, coords.y, maxSpeed);
+		//     },
+		//     /**
+		//      * Gets a random (x,y) position within a bounding box
+		//      *
+		//      *
+		//      * @param  {number} minX minimum X coordinate of the region
+		//      * @param  {number} minY minimum Y coordinate of the region
+		//      * @param  {number} maxX maximum X coordinate of the region
+		//      * @param  {number} maxY maximum Y coordinate of the region
+		//      *
+		//      * @return {Object} An object with random {x, y} positions
+		//      */
+		//     getRandomPosition: function(minX, minY, maxX, maxY) {
+		//         return {
+		//             x: Math.floor((Math.random() * maxX) + minX),
+		//             y: Math.floor((Math.random() * maxY) + minY)
+		//         };
+		//     }
+		// };
+		// /**
+		//  * Constructor function of our starfield. This just prepares the DOM nodes where
+		//  * the scene will be rendered.
+		//  *
+		//  * @param {string} canvasId The DOM Id of the <div> containing a <canvas> tag
+			//  */
+			// var StarField = function(containerId) {
+			//     this.container = document.getElementById(containerId);
+			//     this.canvasElem = this.container.getElementsByTagName('canvas')[0];
+			//     this.canvas = this.canvasElem.getContext('2d');
+			//     this.width = this.container.offsetWidth;
+			//     this.height = this.container.offsetHeight;
+			//     this.starField = [];
+			// };
+			// /**
+			//  * Updates the properties for every star for the next frame to be rendered
+			//  */
+			// StarField.prototype._updateStarField = function() {
+			//     var i,
+			//         star,
+			//         randomLoc,
+			//         increment;
+			//     for (i = 0; i < this.numStars; i++) {
+			//         star = this.starField[i];
+			
+			//         increment = Math.min(star.speed, Math.abs(star.speed / star.slope));
+			//         star.x += (star.x > 0) ? increment : -increment;
+			//         star.y = star.slope * star.x;
+			
+			//         star.opacity += star.speed / 100;
+			
+			//         // Recycle star obj if it goes out of the frame
+			//         if ((Math.abs(star.x) > this.width / 2) ||
+			//             (Math.abs(star.y) > this.height / 2)) {
+			//             //randomLoc = BigBang.getRandomPosition(
+			//             //    -this.width / 2, -this.height / 2,
+			//             //       this.width, this.height
+			//             //);
+			//             randomLoc = BigBang.getRandomPosition(
+			//                 -this.width / 10, -this.height / 10,
+			//                    this.width / 5, this.height / 5
+			//             );
+			//             star.resetPosition(randomLoc.x, randomLoc.y, this.maxStarSpeed);
+			//         }
+			//     }
+			// };
+			// /**
+			//  * Renders the whole starfield (background + stars)
+			//  * This method could be made more efficient by just blipping each star,
+			//  * and not redrawing the whole frame
+			//  */
+			// StarField.prototype._renderStarField = function() {
+			//     var i,
+			//         star;
+			//     // Background
+			//     this.canvas.fillStyle = "rgba(17, 93, 160, .5)";
+			//     this.canvas.fillRect(0, 0, this.width, this.height);
+			//     // Stars
+			//     for (i = 0; i < this.numStars; i++) {
+			//         star = this.starField[i];
+			//         this.canvas.fillStyle = "rgba(255, 255, 0, " + star.opacity + ")";
+			//         this.canvas.fillRect(
+			//             star.x + this.width / 2,
+			//             star.y + this.height / 2,
+			//             2, 2);
+			//     }
+			// };
+			// /**
+			//  * Function that handles the animation of each frame. Update the starfield
+			//  * positions and re-render
+			//  */
+			// StarField.prototype._renderFrame = function(elapsedTime) {
+			//     var timeSinceLastFrame = elapsedTime - (this.prevFrameTime || 0);
+			
+			//     window.requestAnimationFrame(this._renderFrame.bind(this));
+			//     // Skip frames unless at least 30ms have passed since the last one
+			//     // (Cap to ~30fps)
+			//     if (timeSinceLastFrame >= 30 || !this.prevFrameTime) {
+			//         this.prevFrameTime = elapsedTime;
+			//         this._updateStarField();
+			//         this._renderStarField();
+			//     }
+			// };
+			// /**
+			//  * Makes sure that the canvas size fits the size of its container
+			//  */
+			// StarField.prototype._adjustCanvasSize = function(width, height) {
+			//     // Set the canvas size to match the container ID (and cache values)
+			//     this.width = this.canvasElem.width = width || this.container.offsetWidth;
+			//     this.height = this.canvasElem.height = height || this.container.offsetHeight;
+			// };
+			// /**
+			//  * This listener compares the old container size with the new one, and caches
+			//  * the new values.
+			//  */
+			// StarField.prototype._watchCanvasSize = function(elapsedTime) {
+			//     var timeSinceLastCheck = elapsedTime - (this.prevCheckTime || 0),
+			//         width,
+			//         height;
+			//     window.requestAnimationFrame(this._watchCanvasSize.bind(this));
+			//     // Skip frames unless at least 333ms have passed since the last check
+			//     // (Cap to ~3fps)
+			//     if (timeSinceLastCheck >= 333 || !this.prevCheckTime) {
+			//         this.prevCheckTime = elapsedTime;
+			//         width = this.container.offsetWidth;
+			//         height = this.container.offsetHeight;
+			//         if (this.oldWidth !== width || this.oldHeight !== height) {
+			//             this.oldWidth = width;
+			//             this.oldHeight = height;
+			//             this._adjustCanvasSize(width, height);
+			//         }
+			//     }
+			// };
+			// /**
+			//  * Initializes the scene by resizing the canvas to the appropiate value, and
+			//  * sets up the main loop.
+			//  * @param {int} numStars Number of stars in our starfield
+			//  */
+			// StarField.prototype._initScene = function(numStars) {
+			//     var i;
+			//     for (i = 0; i < this.numStars; i++) {
+			//         this.starField.push(
+			//             BigBang.getRandomStar(-this.width / 2, -this.height / 2, this.width, this.height, this.maxStarSpeed)
+			//         );
+			//     }
+			//     // Intervals not stored because I don't plan to detach them later...
+			//     window.requestAnimationFrame(this._renderFrame.bind(this));
+			//     window.requestAnimationFrame(this._watchCanvasSize.bind(this));
+			// };
+			// /**
+			//  * Kicks off everything!
+			//  * @param {int} numStars The number of stars to render
+			//  * @param {int} maxStarSpeed Maximum speed of the stars (pixels / frame)
+			//  */
+			// StarField.prototype.render = function(numStars, maxStarSpeed) {
+			//     this.numStars = numStars || 100;
+			//     this.maxStarSpeed = maxStarSpeed || 3;
+			//     this._initScene(this.numStars);
+			// };
+			// /**
+			//  * requestAnimationFrame shim layer with setTimeout fallback
+			//  * @see http://paulirish.com/2011/requestanimationframe-for-smart-animating
+			//  */
+			// (function() {
+			//     var lastTime = 0;
+			//     var vendors = ['ms', 'moz', 'webkit', 'o'];
+			//     for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+			//         window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
+			//         window.cancelAnimationFrame =
+			//           window[vendors[x]+'CancelAnimationFrame'] || window[vendors[x]+'CancelRequestAnimationFrame'];
+			//     }
+			
+			//     if (!window.requestAnimationFrame)
+			//         window.requestAnimationFrame = function(callback, element) {
+			//             var currTime = new Date().getTime();
+			//             var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+			//             var id = window.setTimeout(function() { callback(currTime + timeToCall); },
+			//               timeToCall);
+			//             lastTime = currTime + timeToCall;
+			//             return id;
+			//         };
+			
+			//     if (!window.cancelAnimationFrame)
+			//         window.cancelAnimationFrame = function(id) {
+			//             clearTimeout(id);
+			//         };
+			// }());
+			// // Kick off!
+			// var starField = new StarField('fullScreen').render(333, 3);
+			</script>
+			<script src="{% static 'portfolio/js/my.js' %}"></script>
+		</body>
+	</html>
