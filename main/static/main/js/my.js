@@ -1,9 +1,8 @@
 $(window).resize(function() {
-   $('#canvas').height($('#size').height());
-    $('#canvas2').height($('#size').height());
-       $('#canvas').width($('#size').width());
-    $('#canvas2').width($('#size').width());
-    console.log($('#size').height()); 
+  $('#canvas').height($('#size').height());
+  $('#canvas2').height($('#size').height());
+  $('#canvas').width($('#size').width());
+  $('#canvas2').width($('#size').width());
 
 });
 
