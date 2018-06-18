@@ -3,28 +3,23 @@ $(window).resize(function() {
 });
 
 $('.port-item').click(function(){
-            $('.collapse').collapse('hide');
-            // console.log($('#size').height());
-            
+    $('.collapse').collapse('hide');
+});
 
-        });
+$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+});
 
-            $(document).on('click', '[data-toggle="lightbox"]', function(event) {
-                event.preventDefault();
-                $(this).ekkoLightbox();
-            });
-
-    $('.collapse').on('hidden.bs.collapse', function () {
-    console.log($('#size').height());
+$('.collapse').on('hidden.bs.collapse', function () {
     $('#canvas2d').height($('#size').height());
-    });
+});
 
-    $('.collapse').on("shown.bs.collapse", function(){
-    console.log($('#size').height());
+$('.collapse').on("shown.bs.collapse", function(){
     $('#canvas2d').height($('#size').height());
-    });
+});
 
-    var Star = function(x, y, maxSpeed) {
+var Star = function(x, y, maxSpeed) {
     this.x = x;
     this.y = y;
     this.slope = y / x; // This only works because our origin is always (0,0)

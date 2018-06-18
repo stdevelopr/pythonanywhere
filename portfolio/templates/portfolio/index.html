@@ -1,5 +1,4 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -11,7 +10,6 @@
 		<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
 		<!-- Main css -->
-		
 		<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Bevan|Permanent+Marker" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet">
@@ -24,19 +22,23 @@
 		</div>
 		<div id="size">
 			<div><i class="fa fa-twiter"></i></div>
-			<div class="container">
+			<div class="container border">
 				<header id="main-header">
 					<div class="row no-gutters">
 						<div class="col-lg-4 col-md-5">
-							<!-- <img src="img/pic2.jpg" alt="" class="rounded-circle"> -->
+							<img src="{% static 'portfolio/images/pic2.jpg' %}" alt="" class="rounded-circle">
 						</div>
 						<div class="col-lg-8 col-md-7">
 							<div class="d-flex flex-column">
 								<div class="p-5 bg-dark text-white">
 									<div class="d-flex flex-row justify-content-around align-items-center">
-										<h1 class="display-4" style="font-family: 'Bevan', cursive; font-size: 3em">DeveloPr</h1>
-										<img src="{% static 'portfolio/images/logo.png' %}" alt="" style="height: 100px; width: 100px">
-										<div style="font-size:3em"><i class="fa fa-github"></i></div>
+										<div class="text-center">
+											<div class="row">
+												
+											</div>
+											<a href="/"><img src="{% static 'portfolio/images/logo.png' %}" alt="" style="height: 100px; width: 100px"></a>
+											<h1 class="display-4 d-inline-block align-bottom" style="font-family: 'Bevan', cursive; font-size: 3em">DeveloPr</h1>
+										</div>
 									</div>
 								</div>
 								<div class="p-4 bg-black">
@@ -95,13 +97,13 @@
 								
 							</div>
 						</div>
-						<h4>JavaScript</h4>
+						<h4>Python</h4>
 						<div class="progress mb-3 bg-warning">
-							<div class="progress-bar bg-success" style="width: 90%">
+							<div class="progress-bar bg-success" style="width: 85%">
 								
 							</div>
 						</div>
-						<h4>NodeJs</h4>
+						<h4>JavaScript</h4>
 						<div class="progress mb-3 bg-warning">
 							<div class="progress-bar bg-success" style="width: 80%">
 								
@@ -109,38 +111,32 @@
 						</div>
 						<h4>PHP</h4>
 						<div class="progress mb-3 bg-warning">
-							<div class="progress-bar bg-success" style="width: 80%">
+							<div class="progress-bar bg-success" style="width: 75%">
 								
 							</div>
 						</div>
+						
 						<h4>SQL (MySQL, PostgreSQL)</h4>
 						<div class="progress mb-3 bg-warning">
-							<div class="progress-bar bg-success" style="width: 80%">
+							<div class="progress-bar bg-success" style="width: 75%">
 								
 							</div>
 						</div>
-						<h4>Python</h4>
+						<h4>GIS</h4>
 						<div class="progress mb-3 bg-warning">
-							<div class="progress-bar bg-success" style="width: 80%">
+							<div class="progress-bar bg-success" style="width: 70%">
 								
 							</div>
 						</div>
+						
 						<h4>C</h4>
 						<div class="progress mb-3 bg-warning">
 							<div class="progress-bar bg-success" style="width: 50%">
 								
 							</div>
 						</div>
-						<h4>GIS</h4>
-						<div class="progress mb-3 bg-warning">
-							<div class="progress-bar bg-success" style="width: 80%">
-								
-							</div>
-						</div>
 						<div class="d-flex d-row justify-content-around">
 							<div class="row">
-								
-								
 								<div><i class="fa fa-tag col-sm-1" aria-hidden="true"></i>JQuery</div>
 								<div><i class="fa fa-tag col-sm-1" aria-hidden="true"></i>AJAX</div>
 								<div><i class="fa fa-tag col-sm-1" aria-hidden="true"></i>BOOTSTRAP</div>
@@ -160,13 +156,13 @@
 						<div class="progress mb-3 bg-warning">
 							<div class="progress-bar bg-info" style="width: 80%"></div>
 						</div>
-						<h4>Deutsch</h4>
+						<h4>German</h4>
 						<div class="progress mb-3 bg-warning">
 							<div class="progress-bar bg-info" style="width: 50%"></div>
 						</div>
 						<h4>Chinese</h4>
 						<div class="progress mb-3 bg-warning">
-							<div class="progress-bar bg-info" style="width: 30%"></div>
+							<div class="progress-bar bg-info" style="width: 20%"></div>
 						</div>
 					</div>
 				</div>
@@ -177,18 +173,15 @@
 					</div>
 					<div class="card card-body py-5 bg-dark">
 						<div class="row no-gutters justify-content-around">
-
 							<div class="col-12 text-center text-white mb-5">
 								<div style="font-size: 40px">Seismic Data Modeling</div>
 								
-		
+								
 								<a href="https://unsplash.it/600.jpg?image=250" data-toggle="lightbox">
 									<img src="{% static 'portfolio/images/seismic.png' %}" alt="" class="img-fluid">
 								</a>
-						<div class="mt-3"><p>A software to model seismic reflection data from fractured medium.</p></div>
+								<div class="mt-3"><p>A software to model seismic reflection data from fractured medium.</p></div>
 							</div>
-
-
 							<div class="col-12 text-center text-white">
 								<div style="font-size: 40px">Cryptocurrency Indicators</div>
 								<a href="https://poloniexmacdhunter.herokuapp.com">
@@ -197,12 +190,6 @@
 								<div class="mt-3"><p>An app to look for all BTC pairs on Poloniex exchange and displays the status of the MACD indicator for all at once.</p></div>
 								
 							</div>
-			<!-- 				<div class="col-md-3">
-								<a href="https://unsplash.it/600.jpg?image=251" data-toggle="lightbox">
-									<img src="https://unsplash.it/600.jpg?image=251" alt="" class="img-fluid">
-								</a>
-							</div> -->
-							
 						</div>
 					</div>
 				</div>
@@ -212,97 +199,109 @@
 						<h2 style="font-size: 50px; color: black">What did I study formally?</h2>
 					</div>
 					<div class="d-flex flex-row text-center justify-content-center">
-				
-						
-						<div class="card bg-dark text-white m-3 col-md-4" style="opacity: 0.8">
-							<div class="card-body">
-								<h4 class="card-title border-bottom"><em>Geofisica</em></h4>
-								<p>Universidade de São Paulo</p>
+						<div class="row justify-content-center">
+							<div class="card bg-dark text-white m-3 col-md-4" style="opacity: 0.8">
+								<div class="card-body">
+									<h4 class="card-title border-bottom"><em>Geofisica</em></h4>
+									<p>Universidade de São Paulo</p>
+								</div>
+								<div class="card-footer">
+									<h6 class="text-muted">Date: 2013-2017</h6>
+								</div>
 							</div>
-							<div class="card-footer">
-								<h6 class="text-muted">Date:2013-2017</h6>
+							<div class="card bg-dark text-white m-3 col-md-4" style="opacity: 0.8">
+								<div class="card-body">
+									<h4 class="card-title border-bottom"><em>Filosofia</em></h4>
+									<p>Universidade de São Paulo</p>
+								</div>
+								<div class="card-footer">
+									<h6 class="text-muted">Date: 2008-2012</h6>
+								</div>
+							</div>
+							<div class="card bg-dark text-white m-3 col-md-4" style="opacity: 0.8">
+								<div class="card-body">
+									<h4 class="card-title border-bottom" ><em>Ciências da Atividade Física</em></h4>
+									<p>Universidade de São Paulo</p>
+								</div>
+								<div class="card-footer">
+									<h6 class="text-muted">Date: 2006-2008</h6>
+								</div>
+							</div>
+							<div class="card bg-dark text-white m-3 col-md-4" style="opacity: 0.8">
+								<div class="card-body">
+									<h4 class="card-title border-bottom" ><em>Eletroeletrônica</em></h4>
+									<p>SENAI</p>
+								</div>
+								<div class="card-footer">
+									<h6 class="text-muted">Date: 1999-2001</h6>
+								</div>
 							</div>
 						</div>
-	<!-- 					<div class="card card bg-dark text-white m-3 col-md-4">
-							<div class="card-body">
-								<h4 class="card-title border-bottom"><em>Filosofia</em></h4>
-								<p>Universidade de São Paulo</p>
-							</div>
-							<div class="card-footer">
-								<h6 class="text-muted">Date:2008-2012</h6>
-							</div>
-						</div> -->
-						<div class="card bg-dark text-white m-3 col-md-4" style="opacity: 0.8">
-							<div class="card-body">
-								<h4 class="card-title border-bottom" ><em>Ciências da Atividade Física</em></h4>
-								<p>Universidade de São Paulo</p>
-							</div>
-							<div class="card-footer">
-								<h6 class="text-muted">Date:2006-2008</h6>
-							</div>
-						</div>
-1
-						</div>
-				
+					</div>
+					
 				</div>
 				<!-- CONTACT -->
 				<div id="contact" class="collapse">
 					<div class="card card-body bg-danger text-white py-5">
 						<h2>Contact</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi provident debitis alias magnam distinctio in vero, neque voluptatum at voluptas placeat reiciendis quia deserunt quas beatae minus pariatur, porro ipsam.</p>
 					</div>
 					<div class="card card-body py-5">
-						<h3>Get in touch</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis eveniet repudiandae aperiam laboriosam dolore magnam quae ab cumque. Aspernatur, non.</p>
-						<form action="contact/" method="post">
-    						{% csrf_token %}
-							<div class="form-group">
-								<div class="input-group input-group-lg">
-									<span class="input-group-addon bg-danger text-white">
-										<i class="fa fa-user"></i>
-									</span>
-									<input type="text" class="form-control bg-dark text-white" placeholder="Name" name="name">
-								</div>
-							</div>
-							<div class="form-group">
-								<div class="input-group input-group-lg">
-									<span class="input-group-addon bg-danger text-white">
-										<i class="fa fa-envelope"></i>
-									</span>
-									<input type="text" class="form-control bg-dark text-white" placeholder="Email" name="email">
-								</div>
-							</div>
-							<div class="form-group">
-								<div class="input-group input-group-lg">
-									<span class="input-group-addon bg-danger text-white">
-										<i class="fa fa-pencil"></i>
-									</span>
-									<textarea rows="5" class="form-control bg-dark text-white" placeholder="Message" name="message"></textarea>
-								</div>
-							</div>
-							<input type="submit" value="submit" class="btn btn-danger btn-block btn-lg">
-						</form>
+						<div class="d-flex flex-row justify-content-around align-items-center">
+							<a href="https://www.linkedin.com/in/developr-st-160088162/"><div style="font-size:2em" class="d-inline-block"><i class="fa fa-linkedin"></i></div></a>
+							<a href="https://www.facebook.com/dev.st.129"><div style="font-size:2em"><i class="fa fa-facebook"></i></div></a>
+							<a href="https://github.com/stdevelopr"><div style="font-size:3em"><i class="fa fa-github"></i></div></a>
+						</div>
+						<div style="font-size:3em"><i class="fa fa-envelope"></i><h4 class="d-inline-block">stdevelopr@gmail.com</h4></div>
 					</div>
+					<!-- email form -->
+					<!-- <form action="contact/" method="post">
+						{% csrf_token %}
+						<div class="form-group">
+							<div class="input-group input-group-lg">
+								<span class="input-group-addon bg-danger text-white">
+									<i class="fa fa-user"></i>
+								</span>
+								<input type="text" class="form-control bg-dark text-white" placeholder="Name" name="name">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="input-group input-group-lg">
+								<span class="input-group-addon bg-danger text-white">
+									<i class="fa fa-envelope"></i>
+								</span>
+								<input type="text" class="form-control bg-dark text-white" placeholder="Email" name="email">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="input-group input-group-lg">
+								<span class="input-group-addon bg-danger text-white">
+									<i class="fa fa-pencil"></i>
+								</span>
+								<textarea rows="5" class="form-control bg-dark text-white" placeholder="Message" name="message"></textarea>
+							</div>
+						</div>
+						<input type="submit" value="submit" class="btn btn-danger btn-block btn-lg">
+					</form> -->
 				</div>
+
 				<!-- FOOTER -->
-				<footer id="main-footer" class="p-5 text-white">
+				<footer id="main-footer" class="p-5 text-white border">
 					<div class="row">
 						<div class="col-md-6">
 							<a href="#" class="btn btn-dark"><i class="fa fa-cloud">Download</i></a>
 						</div>
 					</div>
 				</footer>
-			</div>
-		</div>
-		<!-- Bootstrap CDN-->
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+			</div> 
 
-		<script>
-			$('#canvas2d').height($(document).height());
-		</script>
-		<script src="{% static 'portfolio/js/my.js' %}"></script>
+			<!-- Bootstrap CDN-->
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+			<script>
+				$('#canvas2d').height($(document).height());
+			</script>
+			<script src="{% static 'portfolio/js/my.js' %}"></script>
 		</body>
 	</html>

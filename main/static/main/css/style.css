@@ -9,10 +9,12 @@ position:absolute;
 top:0;
 left:0;
 }
+
 #size{
 	position: relative;
 	height: 100%;
 }
+
 .cont{
 	background: black;
 	position: relative;
@@ -20,11 +22,24 @@ left:0;
 	z-index: 1;
 }
 
-.cont2{
-	
+.cont2{	
 	position: absolute;
 	height: 50px;
 	z-index: 1;
 	bottom: 0;
 	width: 100%;
+}
+
+.cont3{
+	color: white;
+	margin-top:3%;
+	position: relative;
+	width: 100%;
+	top: 0%;
+	z-index: 1;
+}
+
+.cont3 h3:hover{
+	border-bottom: 6px solid !important;
+	transition: 0.3s;
 }

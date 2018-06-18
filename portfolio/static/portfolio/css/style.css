@@ -1,9 +1,9 @@
 html, body { 
 	background:black;
 	width: 100%; height: 100%; 
-    background-image:url("/img/back.jpg"); 
-       background-repeat: no-repeat;
-	 background-size: cover;
+    background-image:url("/static/portfolio/images/back.jpg"); 
+    background-repeat: no-repeat;
+	background-size: cover;
     padding: 0px; margin: 0px; 
 }
 #fullScreen {
@@ -23,12 +23,7 @@ html, body {
 	color: white;
 }
 
-#main-header{
-
-}
-
 #main-header img{
-
 	width: 90%;
 	height: 90%;
 }
@@ -46,8 +41,25 @@ html, body {
 	cursor: pointer;
 }
 
+#main-header a{
+	opacity: 1;
+	cursor: pointer;
+	color: white;
+}
+
+#main-header a:hover{
+	transform: scale(1.3);
+	transition: transform .2s;
+	cursor: pointer;
+}
+
 #contact .fa{
 	padding: 1em;
+}
+
+#contact a:hover{
+	transform: scale(1.3);
+	transition: transform .2s;
 }
 
 @media(min-width: 1199px){
