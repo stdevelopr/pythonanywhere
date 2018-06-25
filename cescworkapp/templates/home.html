@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{%block page%}
+<div class="row">
+	<div class="col-lg-12">
+		<img src="{% static 'img/banner.png' %}" class="banner">
+	</div>
+
+	{%for i in '12345678'%}
+	<div class="col-lg-3">
+		<div class="thumbnail text-center">
+			<a href="{% url 'work_detail' i %}"><img src="{% static 'img/work.gif' %}" alt=""></a>
+			<div >
+				<p><a href="{% url 'work_detail' i %}">I do the work...</a></p>
+				<p><span>by <a href="#">Cesc</a></span><b class="ml-3 text-success">15CESC</b></p>
+			</div>
+		</div>
+	</div>
+	{%endfor%}
+</div>
+{%endblock%}

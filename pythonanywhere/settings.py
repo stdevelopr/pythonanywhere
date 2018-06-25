@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'portfolio',
+    'cescworkapp',
     'main'
 ]
 
@@ -122,3 +123,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATIC_ROOT = '/home/stdevelopr/pythonanywhere/static'
+
+LOGIN_REDIRECT_URL = '/cescwork/'
