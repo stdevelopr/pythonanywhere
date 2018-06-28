@@ -125,3 +125,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = '/home/stdevelopr/pythonanywhere/static'
 
 LOGIN_REDIRECT_URL = '/cescwork/'
+
+#Setup Upload directory for Works model
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
