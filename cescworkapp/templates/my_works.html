@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{%block page%}
+	<div class="container bg-info text-center border " style="padding-top: 100px">
+	<h1>My works</h1>
+
+	<table class="table table-bordered table-striped">
+		<thead class="bg-success">
+			<tr>
+				<th>
+				<th>Work Title</th>
+				<th>Price</th>
+				<th>Status</th>
+				</th>
+
+			</tr>
+		</thead>
+	<tbod>
+		{%for work in works%}
+			<tr>
+				<td>{{forloop.counter}}</td>
+				<td><a href="{%url 'edit_work' work.id%}">{{work.title}}</a></td>
+				<td>{{work.price}}</td>
+				<td>{%if work.status%}Active {%else%}Disable{%endif%}</td>
+			</tr>
+
+		{%endfor%}
+	</tbod>
+	</table>
+
+</div>
+{%endblock%}

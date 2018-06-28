@@ -6,13 +6,13 @@
 		<img src="{% static 'img/banner.png' %}" class="banner">
 	</div>
 
-	{%for i in '12345678'%}
+	{%for work in works%}
 	<div class="col-lg-3">
 		<div class="thumbnail text-center">
-			<a href="{% url 'work_detail' i %}"><img src="{% static 'img/work.gif' %}" alt=""></a>
+			<a href="{% url 'work_detail' work.id %}"><img src="/media/{{work.photo}}" alt="" style="max-height: 200px"></a>
 			<div >
-				<p><a href="{% url 'work_detail' i %}">I do the work...</a></p>
-				<p><span>by <a href="#">Cesc</a></span><b class="ml-3 text-success">15CESC</b></p>
+				<p><a href="{% url 'work_detail' work.id %}">{{work.title}}</a></p>
+				<p><span>by <a href="#">{{work.user.username}}</a></span><b class="ml-3 text-success">{{work.price}} CESCs</b></p>
 			</div>
 		</div>
 	</div>

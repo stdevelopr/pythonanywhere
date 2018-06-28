@@ -2,6 +2,9 @@
 
 {%block page%}
 <div class="container bg-info text-center border " style="padding-top: 100px">
-	<h3>Work {{id}} detail.</h3>
+	<h2>{{work.title}}</h2>
+	<img src="/media/{{work.photo}}" alt="">
+	<p>{{work.description}}</p>
+	<p>Order now: {{work.price}} Cescs</p>
 </div>
 {%endblock%}

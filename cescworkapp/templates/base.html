@@ -28,6 +28,9 @@
 						{{user.username}}
 					</a>
 					<ul class="dropdown-menu bg-info">
+						<li><a href="{%url 'create_work' %}" class="nav-link">Create a work</a></li>
+						<li><a href="{%url 'my_works' %}" class="nav-link">My works</a></li>
+						<li role="separator" class="dropdown-divider"></li>
 						<li><a href="{%url 'logout'%}?next={{request.path}}" class="nav-link">Logout</a></li>
 					</ul>
 				</li>
